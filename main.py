@@ -17,3 +17,11 @@ def remove_last_task():
         
 remove_last_task()
 add_task("B: replaced last task")
+
+#!שים לב לפונקציה
+def update_first_task(new_task):
+    with open("tasks.txt", "r") as f:
+        lines = f.readlines()
+    lines[0] = new_task + "\n"
+    with open("tasks.txt", "w") as f:
+        f.writelines(lines)
