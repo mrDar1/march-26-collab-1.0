@@ -5,3 +5,5 @@ add_task("Initial task by A")
 tasks = list_tasks()
 for t in tasks:
     print(t)
+    
+add_task("B: buy groceries")
