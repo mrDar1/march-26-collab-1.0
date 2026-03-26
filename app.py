@@ -19,3 +19,6 @@ def delete_last_entry():
         lines = f.readlines()
     with open("data.txt", "w") as f:
         f.writelines(lines[:-1])
+
+delete_last_entry()
+add_entry("B: replaced deleted entry")
