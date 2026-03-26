@@ -12,3 +12,10 @@ add_entry("A: second change")
 add_entry("B: updating logic")
 
 add_entry("A: refining update")
+
+
+def delete_last_entry():
+    with open("data.txt", "r") as f:
+        lines = f.readlines()
+    with open("data.txt", "w") as f:
+        f.writelines(lines[:-1])
