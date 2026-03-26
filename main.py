@@ -14,3 +14,6 @@ def remove_last_task():
         lines = f.readlines()
     with open("tasks.txt", "w") as f:
         f.writelines(lines[:-1])
+        
+remove_last_task()
+add_task("B: replaced last task")
