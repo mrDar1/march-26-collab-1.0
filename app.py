@@ -8,3 +8,5 @@ for line in read_entries():
 add_entry("B: first change")
 
 add_entry("A: second change")
+
+add_entry("B: updating logic")
